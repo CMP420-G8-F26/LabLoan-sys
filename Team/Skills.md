@@ -4,3 +4,5 @@ Rachad Bouida:
 - Skills: Python, C++, JavaScript, SQL, HTML, CSS, Java, Machine Learning.
 Hassan Almarri:
 - Skills: Python, C++, JavaScript, SQL, HTML, CSS, Java.
+Saud Alzaabi
+- Skills: Python, C++, Web Development
