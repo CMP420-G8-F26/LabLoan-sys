@@ -26,8 +26,8 @@ Hassan Almarri Contributions
 
 
 Rachad Bouida Contributions
-1.
-2.
-3.
-4.
-5.
+1.Approve Loan Request
+2.Reject Loan Request
+3.Record Equipment Checkout
+4.Record Equipment Condition
+5.Monitor Overdue Equipment
