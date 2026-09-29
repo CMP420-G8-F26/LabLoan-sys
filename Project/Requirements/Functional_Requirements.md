@@ -17,11 +17,11 @@ Saud Alzaabi Contributions
 
 
 Hassan Almarri Contributions
-1.
-2.
-3.
-4.
-5.
+1.The system shall display the availability and current status of equipment, such as Available, Borrowed, Overdue, Damaged, or Unavailable.
+2.The system shall allow students to submit equipment loan requests for available equipment.
+3.The system shall allow students to view the current status of their submitted loan requests.
+4.The system shall allow authorized laboratory staff to view pending loan requests.
+5.The system shall provide notifications for loan approval, loan rejection, expected returns, and overdue equipment.
 
 
 

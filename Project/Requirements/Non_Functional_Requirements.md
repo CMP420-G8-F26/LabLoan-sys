@@ -17,11 +17,11 @@ Saud Alzaabi Contributions
 
 
 Hassan Almarri Contributions
-1.
-2.
-3.
-4.
-5.
+1.The system shall provide a simple and understandable user interface that can be used by students and laboratory staff without extensive training.
+2.The system should return normal search and equipment availability results within 3 seconds under normal operating conditions.
+3.The system should operate correctly on commonly used modern web browsers.
+4.The system shall use consistent navigation, labels, buttons, and terminology across its main screens.
+5.Equipment status and availability shall remain synchronized with checkout, return, and overdue records.
 
 
 
