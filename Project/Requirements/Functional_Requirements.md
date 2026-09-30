@@ -1,10 +1,9 @@
 Mohammad Ibrahim Contributions
-1.
-2.
-3.
-4.
-5.
-
+1. The system shall assign a unique identification number to each equipment item.
+2. The system shall store basic equipment information, including identification, description, condition, and current status.
+3. The system shall allow users to search for laboratory equipment using relevant equipment information.
+4. The system shall allow users to search for laboratory equipment using relevant equipment information.
+5. The system shall update equipment availability when equipment is checked out.
 
 
 Saud Alzaabi Contributions

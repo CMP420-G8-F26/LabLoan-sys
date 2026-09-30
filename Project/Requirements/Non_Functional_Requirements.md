@@ -1,9 +1,9 @@
 Mohammad Ibrahim Contributions
-1.
-2.
-3.
-4.
-5.
+1. The system shall retain relevant loan, return, approval, and equipment-status information so that activities can be reviewed when required.
+2. The system shall restrict access to personal and loan information to authorized users according to their roles.
+3. The system shall provide clear error messages when an operation fails or invalid information is entered.
+4. Each major system module shall be testable independently and as part of the complete integrated system.
+5. The source code shall be maintained using version control, such as the team's GitHub repository, to support collaboration, change tracking, and recovery of previous versions.
 
 
 
