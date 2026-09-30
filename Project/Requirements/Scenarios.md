@@ -63,3 +63,22 @@ Actor: Laboratory Staff
 Stakeholders: Laboratory Staff, Administrator, Faculty/Instructor
 Scenario Description:
 A laboratory staff member logs into the system and selects the report generation option. The staff member chooses the type of report, such as current loans, overdue equipment, loan history, return history, or equipment usage. The system collects the relevant information and generates the requested report for the authorized user to view.
+
+
+
+Rachad Bouida Scenarios:
+Scenario 1: Monitoring and Flagging Overdue Equipment
+1. A laboratory staff member logs in and opens the Overdue Equipment dashboard.
+2. The system checks active loans against the current date and lists items past their expected return date.
+3. The system displays the overdue record (Equipment ID EQ-OSC-204, Borrower g00084512, Due Date: Sept 30, 2026).
+4. Staff selects the record and triggers an automated overdue notice to the student's email.
+5. The system logs the notice and marks the student's loan status as Overdue.
+6. If an unauthorized user tries to access this page, the system blocks access with an error message.
+
+Scenario 2: Equipment Return with Condition Inspection
+1. A student returns a borrowed item (Function Generator EQ-FG-108) to the lab desk.
+2. Staff enters the Equipment ID into the system to pull up the active loan record.
+3. Staff inspects the equipment, finds a damaged connector, and selects the condition as Damaged along with a brief note.
+4. If required return details or condition notes are missing, the system blocks the submission to prevent incomplete data.
+5. Staff confirms the return, and the system records the actual return date.
+6. The system updates the equipment status from Checked Out to Damaged / Maintenance Required so other students cannot borrow it.
