@@ -1,18 +1,18 @@
 Mohammad Ibrahim Contributions
-1. Authorized staff add, update, view, or deactivate equipment records.
-2. User views equipment information, condition, and current status.
-3. User searches for specific equipment using relevant search information.
-4. Staff record the date by which borrowed equipment is expected to be returned.
-5. Staff record that borrowed equipment has been returned and enter the actual return date.
+1. Manage Equipment: Authorized staff add, update, view, or deactivate equipment records.
+2. View Equipment Details: User views equipment information, condition, and current status.
+3. Search Equipment: User searches for specific equipment using relevant search information.
+4. Record Expected Return Date: Staff record the date by which borrowed equipment is expected to be returned.
+5. Record Equipment Return: Staff record that borrowed equipment has been returned and enter the actual return date.
 
 
 
 Saud Alzaabi Contributions
-1.
-2.
-3.
-4.
-5.
+1. Login
+2. Logout
+3. Manage Users
+4. View Loan and Return History
+5. Generate Reports
 
 
 

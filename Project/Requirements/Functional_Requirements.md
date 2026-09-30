@@ -7,11 +7,11 @@ Mohammad Ibrahim Contributions
 
 
 Saud Alzaabi Contributions
-1.
-2.
-3.
-4.
-5.
+1. The system shall allow registered users to log in using valid credentials.
+2. The system shall allow authenticated users to log out securely.
+3. The system shall assign users appropriate roles, such as Student, Laboratory Staff/Technician, Administrator, and Faculty/Instructor.
+4. The system shall restrict access to system functions according to the user's assigned role.
+5. The system shall allow authorized users to create, update, view, and deactivate laboratory equipment records.
 
 
 

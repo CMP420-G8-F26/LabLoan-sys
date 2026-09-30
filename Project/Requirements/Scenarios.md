@@ -50,3 +50,16 @@ Scenario: A borrower returns equipment that was previously checked out.
 8. Authorized users can view the updated equipment condition and availability.
 9. If the equipment cannot be found or invalid return information is entered, the system displays an appropriate error message.
 10. The updated source code and related changes are maintained through the team's GitHub version-control repository.
+
+Saud Alzaabi Scenarios:
+Scenario 1: Viewing Loan and Return History
+Actor: Student
+Stakeholders: Student, Laboratory Staff, Administrator
+Scenario Description:
+A student logs into the system and selects the option to view loan and return history. The system verifies the student's account and displays the equipment previously borrowed, the loan dates, return dates, and current loan status. This allows the student to keep track of previous and current equipment loans.
+
+Scenario 2: Generating Laboratory Reports
+Actor: Laboratory Staff
+Stakeholders: Laboratory Staff, Administrator, Faculty/Instructor
+Scenario Description:
+A laboratory staff member logs into the system and selects the report generation option. The staff member chooses the type of report, such as current loans, overdue equipment, loan history, return history, or equipment usage. The system collects the relevant information and generates the requested report for the authorized user to view.
