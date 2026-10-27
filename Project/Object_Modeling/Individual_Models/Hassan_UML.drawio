@@ -1,0 +1,122 @@
+<mxfile host="app.diagrams.net" agent="ChatGPT" compressed="false">
+  <diagram id="hassan-final-uml" name="Exercise 2 - Individual Class Diagram">
+    <mxGraphModel dx="1272" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1780" pageHeight="1140" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="User" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;rounded=0;container=1;collapsible=0;fontFamily=Arial;fontSize=19;fontStyle=1;fillColor=#edf0ff;swimlaneFillColor=#ffffff;strokeColor=#6577a1;strokeWidth=1.7;fontColor=#1f2b38;align=center;verticalAlign=middle;spacingTop=2;" value="«abstract» User" vertex="1">
+          <mxGeometry height="202" width="300" x="745" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="User_a" parent="User" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.48&quot;&gt;- userId: String&lt;br/&gt;- fullName: String&lt;br/&gt;- email: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="300" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="User_sep" parent="User" style="fillColor=#c3cdd4;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="User_m" parent="User" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.50&quot;&gt;+ getEmail(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="300" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="Student" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;rounded=0;container=1;collapsible=0;fontFamily=Arial;fontSize=19;fontStyle=1;fillColor=#e9f5fc;swimlaneFillColor=#ffffff;strokeColor=#4d8caa;strokeWidth=1.7;fontColor=#1f2b38;align=center;verticalAlign=middle;spacingTop=2;" value="Student" vertex="1">
+          <mxGeometry height="253" width="540" x="65" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="Student_a" parent="Student" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.48&quot;&gt;- studentId: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="540" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Student_sep" parent="Student" style="fillColor=#c3cdd4;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="540" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="Student_m" parent="Student" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.50&quot;&gt;+ checkAvailability(equipment: Equipment,&lt;br/&gt;    startDate: Date, endDate: Date): boolean&lt;br/&gt;+ submitLoanRequest(equipment: Equipment,&lt;br/&gt;    startDate: Date, endDate: Date): LoanRequest&lt;br/&gt;+ viewRequestStatus(request: LoanRequest): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="148" width="540" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;rounded=0;container=1;collapsible=0;fontFamily=Arial;fontSize=19;fontStyle=1;fillColor=#e9f5fc;swimlaneFillColor=#ffffff;strokeColor=#4d8caa;strokeWidth=1.7;fontColor=#1f2b38;align=center;verticalAlign=middle;spacingTop=2;" value="LabStaff" vertex="1">
+          <mxGeometry height="181" width="525" x="1180" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff_a" parent="LabStaff" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.48&quot;&gt;- staffId: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="525" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff_sep" parent="LabStaff" style="fillColor=#c3cdd4;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="525" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff_m" parent="LabStaff" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.50&quot;&gt;+ viewPendingRequests(): List&amp;lt;LoanRequest&amp;gt;&lt;br/&gt;+ reviewRequest(request: LoanRequest): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="76" width="525" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;rounded=0;container=1;collapsible=0;fontFamily=Arial;fontSize=19;fontStyle=1;fillColor=#fff3dc;swimlaneFillColor=#ffffff;strokeColor=#ba8e44;strokeWidth=1.7;fontColor=#1f2b38;align=center;verticalAlign=middle;spacingTop=2;" value="LoanRequest" vertex="1">
+          <mxGeometry height="266" width="440" x="685" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest_a" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.48&quot;&gt;- requestId: String&lt;br/&gt;- startDate: Date&lt;br/&gt;- endDate: Date&lt;br/&gt;- status: String&lt;br/&gt;- submittedAt: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="440" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest_sep" parent="LoanRequest" style="fillColor=#c3cdd4;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="440" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest_m" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.50&quot;&gt;+ validateDates(): boolean&lt;br/&gt;+ getStatus(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="76" width="440" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="loan0manyA" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="23" width="51" x="-41" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="loanManyEquip" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="23" width="51" x="-35" y="177" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;rounded=0;container=1;collapsible=0;fontFamily=Arial;fontSize=19;fontStyle=1;fillColor=#e5f5ec;swimlaneFillColor=#ffffff;strokeColor=#4b9270;strokeWidth=1.7;fontColor=#1f2b38;align=center;verticalAlign=middle;spacingTop=2;" value="Equipment" vertex="1">
+          <mxGeometry height="218" width="520" x="65" y="805" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment_a" parent="Equipment" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.48&quot;&gt;- equipmentId: String&lt;br/&gt;- name: String&lt;br/&gt;- availabilityStatus: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="97" width="520" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment_sep" parent="Equipment" style="fillColor=#c3cdd4;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="520" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment_m" parent="Equipment" style="text;html=1;whiteSpace=wrap;rounded=0;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=14;fontColor=#1c2935;align=left;verticalAlign=top;spacingLeft=12;spacingTop=8;" value="&lt;div style=&quot;line-height:1.50&quot;&gt;+ isAvailable(startDate: Date,&lt;br/&gt;    endDate: Date): boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="76" width="520" y="141" as="geometry" />
+        </mxCell>
+        <mxCell id="inheritStudent" edge="1" parent="1" source="Student" style="endArrow=block;endFill=0;endSize=20;startArrow=none;strokeWidth=2.1;strokeColor=#556478;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.81;exitY=0;exitDx=0;exitDy=0;entryX=0.27;entryY=1;entryDx=0;entryDy=0;" target="User" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="inheritStaff" edge="1" parent="1" source="LabStaff" style="endArrow=block;endFill=0;endSize=20;startArrow=none;strokeWidth=2.1;strokeColor=#556478;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.17;exitY=0;exitDx=0;exitDy=0;entryX=0.73;entryY=1;entryDx=0;entryDy=0;" target="User" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="studentRequest" edge="1" parent="1" source="Student" style="endArrow=none;startArrow=none;html=1;strokeWidth=2;strokeColor=#667687;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.78;exitDx=0;exitDy=0;entryX=0;entryY=0.28;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="642" y="600" />
+              <mxPoint x="642" y="842" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="staffRequest" edge="1" parent="1" source="LabStaff" style="endArrow=none;startArrow=none;html=1;strokeWidth=2;strokeColor=#667687;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.78;exitDx=0;exitDy=0;entryX=1;entryY=0.28;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1146" y="600" />
+              <mxPoint x="1146" y="842" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="equipmentRequest" edge="1" parent="1" source="Equipment" style="endArrow=none;startArrow=none;html=1;strokeWidth=2;strokeColor=#667687;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=1;exitY=0.63;exitDx=0;exitDy=0;entryX=0;entryY=0.65;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="submits" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=0;align=center;verticalAlign=middle;" value="submits" vertex="1">
+          <mxGeometry height="26" width="77" x="607" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="student1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="23" width="51" x="591" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="reviews" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=0;align=center;verticalAlign=middle;" value="reviews" vertex="1">
+          <mxGeometry height="26" width="80" x="1107" y="679" as="geometry" />
+        </mxCell>
+        <mxCell id="staffMany" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="0..*" vertex="1">
+          <mxGeometry height="23" width="51" x="1128" y="827" as="geometry" />
+        </mxCell>
+        <mxCell id="staffOptional" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="0..1" vertex="1">
+          <mxGeometry height="23" width="51" x="1157" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="eqrel" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=0;align=center;verticalAlign=middle;" value="for equipment" vertex="1">
+          <mxGeometry height="26" width="108" x="587" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="equipOne" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#ffffff;fontFamily=Arial;fontSize=14;fontColor=#344655;fontStyle=1;align=center;verticalAlign=middle;" value="1" vertex="1">
+          <mxGeometry height="23" width="51" x="567" y="956" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
