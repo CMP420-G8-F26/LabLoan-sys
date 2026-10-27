@@ -1,0 +1,365 @@
+<mxfile host="app.diagrams.net" agent="COE420 Lab 5 draft" compressed="false">
+  <diagram id="lab5-consolidated-v1" name="Consolidated UML - Working Draft">
+    <mxGraphModel dx="2711" dy="1408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2820" pageHeight="2170" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="background" parent="1" style="rounded=0;fillColor=#F8FAFD;strokeColor=#E2EAF1;" value="" vertex="1">
+          <mxGeometry height="2140" width="2790" x="12" y="12" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-actors" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=18;fontColor=#48617b;fontStyle=1;align=left;verticalAlign=middle;spacing=3;" value="A  /  ACCOUNTS &amp; ROLES" vertex="1">
+          <mxGeometry height="34" width="820" x="77" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-domain" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=18;fontColor=#48617b;fontStyle=1;align=left;verticalAlign=middle;spacing=3;" value="B  /  EQUIPMENT, REQUESTS &amp; REPORTING" vertex="1">
+          <mxGeometry height="34" width="1350" x="77" y="951" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-transaction" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=18;fontColor=#48617b;fontStyle=1;align=left;verticalAlign=middle;spacing=3;" value="C  /  LOANS, RETURNS &amp; NOTIFICATIONS" vertex="1">
+          <mxGeometry height="34" width="1360" x="77" y="1442" as="geometry" />
+        </mxCell>
+        <mxCell id="User" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7294AF;strokeWidth=1.5;" value="User" vertex="1">
+          <mxGeometry height="263" width="650" x="1070" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="User-attr" parent="User" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- userID: String&lt;br&gt;- name: String&lt;br&gt;- email: String&lt;br&gt;- passwordHash: String&lt;br&gt;- role: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="650" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="User-separator" parent="User" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="650" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="User-op" parent="User" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ login(email: String, password: String): boolean&lt;br&gt;+ logout(): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="650" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Student" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7695B3;strokeWidth=1.5;" value="Student" vertex="1">
+          <mxGeometry height="215" width="700" x="70" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Student-attr" parent="Student" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- studentID: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="700" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Student-separator" parent="Student" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="700" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="Student-op" parent="Student" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ submitLoanRequest(equipment: Equipment,&lt;br&gt;    startDate: Date, endDate: Date): LoanRequest&lt;br&gt;+ viewRequestStatus(request: LoanRequest): String&lt;br&gt;+ viewLoanHistory(): List&amp;lt;Loan&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="700" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7695B3;strokeWidth=1.5;" value="LabStaff" vertex="1">
+          <mxGeometry height="267" width="765" x="955" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff-attr" parent="LabStaff" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- staffID: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="765" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff-separator" parent="LabStaff" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="765" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="LabStaff-op" parent="LabStaff" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ viewPendingRequests(): List&amp;lt;LoanRequest&amp;gt;&lt;br&gt;+ reviewRequest(request: LoanRequest): void&lt;br&gt;+ addEquipment(item: Equipment): void&lt;br&gt;+ updateEquipment(item: Equipment): void&lt;br&gt;+ deactivateEquipment(equipmentID: String): void&lt;br&gt;+ viewLoanRecords(): List&amp;lt;Loan&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="176" width="765" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7695B3;strokeWidth=1.5;" value="Admin" vertex="1">
+          <mxGeometry height="189" width="800" x="1920" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin-attr" parent="Admin" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- adminID: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="800" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin-separator" parent="Admin" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="800" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="Admin-op" parent="Admin" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ createUser(user: User): void&lt;br&gt;+ updateUserRole(userID: String, role: String): void&lt;br&gt;+ deactivateUser(userID: String): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="98" width="800" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipmentCatalog" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#1D766F;swimlaneFillColor=#FFFFFF;strokeColor=#67A9A0;strokeWidth=1.5;" value="EquipmentCatalog" vertex="1">
+          <mxGeometry height="189" width="590" x="70" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipmentCatalog-attr" parent="EquipmentCatalog" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- catalogID: String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="45" width="590" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipmentCatalog-separator" parent="EquipmentCatalog" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="590" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="EquipmentCatalog-op" parent="EquipmentCatalog" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ searchEquipment(keyword: String): List&amp;lt;Equipment&amp;gt;&lt;br&gt;+ findEquipment(equipmentID: String): Equipment&lt;br&gt;+ listAvailableEquipment(): List&amp;lt;Equipment&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="98" width="590" y="89" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#1D766F;swimlaneFillColor=#FFFFFF;strokeColor=#67A9A0;strokeWidth=1.5;" value="Equipment" vertex="1">
+          <mxGeometry height="315" width="605" x="730" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment-attr" parent="Equipment" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- equipmentID: String&lt;br&gt;- name: String&lt;br&gt;- description: String&lt;br&gt;- condition: EquipmentCondition&lt;br&gt;- status: EquipmentStatus&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="605" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment-separator" parent="Equipment" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="605" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="Equipment-op" parent="Equipment" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ getDetails(): String&lt;br&gt;+ updateStatus(status: EquipmentStatus): void&lt;br&gt;+ updateCondition(condition: EquipmentCondition): void&lt;br&gt;+ isAvailable(startDate: Date, endDate: Date): boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="605" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#926E28;swimlaneFillColor=#FFFFFF;strokeColor=#B7A369;strokeWidth=1.5;" value="LoanRequest" vertex="1">
+          <mxGeometry height="315" width="650" x="1405" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest-attr" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- requestID: String&lt;br&gt;- startDate: Date&lt;br&gt;- endDate: Date&lt;br&gt;- status: String&lt;br&gt;- submittedAt: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="650" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest-separator" parent="LoanRequest" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="650" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="LoanRequest-op" parent="LoanRequest" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ validateDates(): boolean&lt;br&gt;+ getStatus(): String&lt;br&gt;+ approve(): void&lt;br&gt;+ reject(reason: String): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="650" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Report" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#59678E;swimlaneFillColor=#FFFFFF;strokeColor=#7F8FB9;strokeWidth=1.5;" value="Report" vertex="1">
+          <mxGeometry height="265" width="600" x="2120" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-attr" parent="Report" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- reportID: String&lt;br&gt;- reportType: String&lt;br&gt;- generatedDate: Date&lt;/div&gt;" vertex="1">
+          <mxGeometry height="95" width="600" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-separator" parent="Report" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="600" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="Report-op" parent="Report" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ generateUsageReport(startDate: Date,&lt;br&gt;    endDate: Date): String&lt;br&gt;+ generateOverdueReport(): String&lt;br&gt;+ generateLoanHistoryReport(): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="600" y="139" as="geometry" />
+        </mxCell>
+        <mxCell id="Loan" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#66528E;swimlaneFillColor=#FFFFFF;strokeColor=#8873B0;strokeWidth=1.5;" value="Loan" vertex="1">
+          <mxGeometry height="315" width="665" x="700" y="1515" as="geometry" />
+        </mxCell>
+        <mxCell id="Loan-attr" parent="Loan" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- loanID: String&lt;br&gt;- checkoutDate: Date&lt;br&gt;- expectedReturnDate: Date&lt;br&gt;- actualReturnDate: Date&lt;br&gt;- status: LoanStatus&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="665" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Loan-separator" parent="Loan" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="665" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="Loan-op" parent="Loan" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ getLoanDetails(): String&lt;br&gt;+ isOverdue(currentDate: Date): boolean&lt;br&gt;+ markOverdue(): void&lt;br&gt;+ completeReturn(actualDate: Date): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="124" width="665" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="ReturnTransaction" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#66528E;swimlaneFillColor=#FFFFFF;strokeColor=#8873B0;strokeWidth=1.5;" value="ReturnTransaction" vertex="1">
+          <mxGeometry height="289" width="650" x="1440" y="1515" as="geometry" />
+        </mxCell>
+        <mxCell id="ReturnTransaction-attr" parent="ReturnTransaction" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- returnID: String&lt;br&gt;- returnDate: Date&lt;br&gt;- isLate: boolean&lt;br&gt;- receivedByStaffID: String&lt;br&gt;- conditionAtReturn: EquipmentCondition&lt;/div&gt;" vertex="1">
+          <mxGeometry height="145" width="650" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="ReturnTransaction-separator" parent="ReturnTransaction" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="650" y="188" as="geometry" />
+        </mxCell>
+        <mxCell id="ReturnTransaction-op" parent="ReturnTransaction" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ processReturn(loan: Loan): void&lt;br&gt;+ checkLateStatus(expectedDate: Date,&lt;br&gt;    actualDate: Date): boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="98" width="650" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="Notification" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#66528E;swimlaneFillColor=#FFFFFF;strokeColor=#8873B0;strokeWidth=1.5;" value="Notification" vertex="1">
+          <mxGeometry height="314" width="580" x="2160" y="1515" as="geometry" />
+        </mxCell>
+        <mxCell id="Notification-attr" parent="Notification" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- notificationID: String&lt;br&gt;- recipientEmail: String&lt;br&gt;- messageContent: String&lt;br&gt;- dateSent: Date&lt;br&gt;- notificationType: NotificationType&lt;br&gt;- isSent: boolean&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="580" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="Notification-separator" parent="Notification" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="1" width="580" y="213" as="geometry" />
+        </mxCell>
+        <mxCell id="Notification-op" parent="Notification" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ send(): boolean&lt;br&gt;+ formatOverdueMessage(studentName: String,&lt;br&gt;    equipmentName: String, daysOverdue: int): String&lt;/div&gt;" vertex="1">
+          <mxGeometry height="98" width="580" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="is-student" edge="1" parent="1" source="Student" style="endArrow=block;endFill=0;endSize=18;strokeColor=#52718B;strokeWidth=2.2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.52;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.6;entryDx=0;entryDy=0;" target="User" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="415" />
+              <mxPoint x="1040" y="415" />
+              <mxPoint x="1040" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is-staff" edge="1" parent="1" source="LabStaff" style="endArrow=block;endFill=0;endSize=18;strokeColor=#52718B;strokeWidth=2.2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.57;exitY=0;exitDx=0;exitDy=0;entryX=0.52;entryY=1;entryDx=0;entryDy=0;" target="User" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="is-admin" edge="1" parent="1" source="Admin" style="endArrow=block;endFill=0;endSize=18;strokeColor=#52718B;strokeWidth=2.2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.51;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.6;entryDx=0;entryDy=0;" target="User" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2330" y="415" />
+              <mxPoint x="1750" y="415" />
+              <mxPoint x="1750" y="295" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="assoc-submits" edge="1" parent="1" source="Student" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.64;exitDx=0;exitDy=0;entryX=0.18;entryY=0;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="920" />
+              <mxPoint x="1520" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="submits" vertex="1">
+          <mxGeometry height="25" width="110" x="1085" y="888" as="geometry" />
+        </mxCell>
+        <mxCell id="s-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="25" width="36" x="779" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="s-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="26" width="59" x="1500" y="964" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-reviews" edge="1" parent="1" source="LabStaff" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0.62;entryY=0;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1800" y="861" />
+              <mxPoint x="1800" y="955" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="review-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="reviews" vertex="1">
+          <mxGeometry height="25" width="95" x="1752" y="897" as="geometry" />
+        </mxCell>
+        <mxCell id="review-staff" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="26" width="55" x="1718" y="802" as="geometry" />
+        </mxCell>
+        <mxCell id="review-requests" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="26" width="55" x="1810" y="968" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-manages" edge="1" parent="1" source="LabStaff" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.16;exitY=1;exitDx=0;exitDy=0;entryX=0.58;entryY=0;entryDx=0;entryDy=0;" target="Equipment" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1080" y="899" />
+              <mxPoint x="1080" y="975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="manages-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="manages" vertex="1">
+          <mxGeometry height="25" width="90" x="990" y="903" as="geometry" />
+        </mxCell>
+        <mxCell id="staff-to-eq" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="60" x="1080" y="963" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-student-loan" edge="1" parent="1" source="Student" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0;exitY=0.64;exitDx=0;exitDy=0;entryX=0;entryY=0.48;entryDx=0;entryDy=0;" target="Loan" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="35" y="615" />
+              <mxPoint x="35" y="1455" />
+              <mxPoint x="674" y="1455" />
+              <mxPoint x="674" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="student-loan-name" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="borrows" vertex="1">
+          <mxGeometry height="24" width="90" x="344" y="1424" as="geometry" />
+        </mxCell>
+        <mxCell id="student-loan-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="24" width="25" x="34" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="student-loan-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="54" x="653" y="1655" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-catalog" edge="1" parent="1" source="EquipmentCatalog" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.44;exitDx=0;exitDy=0;entryX=0;entryY=0.44;entryDx=0;entryDy=0;" target="Equipment" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="lists" vertex="1">
+          <mxGeometry height="25" width="67" x="660" y="1082" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="25" width="22" x="655" y="1119" as="geometry" />
+        </mxCell>
+        <mxCell id="catalog-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="49" x="679" y="1119" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-equipment-request" edge="1" parent="1" source="Equipment" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.55;exitDx=0;exitDy=0;entryX=0;entryY=0.55;entryDx=0;entryDy=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req-equip-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="for item" vertex="1">
+          <mxGeometry height="25" width="72" x="1331" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="req-equip-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="24" width="20" x="1335" y="1236" as="geometry" />
+        </mxCell>
+        <mxCell id="req-equip-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="24" width="47" x="1357" y="1236" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-equipment-loan" edge="1" parent="1" source="Equipment" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.43;exitY=1;exitDx=0;exitDy=0;entryX=0.43;entryY=0;entryDx=0;entryDy=0;" target="Loan" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="1450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="equipment-loan-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="loaned as" vertex="1">
+          <mxGeometry height="25" width="103" x="1003" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="equipment-loan-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="24" width="30" x="965" y="1379" as="geometry" />
+        </mxCell>
+        <mxCell id="equipment-loan-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="52" x="973" y="1473" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-request-to-loan" edge="1" parent="1" source="LoanRequest" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.18;exitY=1;exitDx=0;exitDy=0;entryX=0.84;entryY=0;entryDx=0;entryDy=0;" target="Loan" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1485" y="1452" />
+              <mxPoint x="1260" y="1452" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fulfills-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="may create" vertex="1">
+          <mxGeometry height="25" width="110" x="1352" y="1424" as="geometry" />
+        </mxCell>
+        <mxCell id="req-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="23" width="26" x="1480" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="loan-optional" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="23" width="57" x="1270" y="1482" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-loan-return" edge="1" parent="1" source="Loan" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.55;exitDx=0;exitDy=0;entryX=0;entryY=0.55;entryDx=0;entryDy=0;" target="ReturnTransaction" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="return-edge-name" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="returned via" vertex="1">
+          <mxGeometry height="26" width="82" x="1364" y="1723" as="geometry" />
+        </mxCell>
+        <mxCell id="loan-one-return" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="24" width="20" x="1367" y="1748" as="geometry" />
+        </mxCell>
+        <mxCell id="ret-opt" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="24" width="48" x="1389" y="1748" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-admin-report" edge="1" parent="1" source="Admin" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.6;exitY=1;exitDx=0;exitDy=0;entryX=0.42;entryY=0;entryDx=0;entryDy=0;" target="Report" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2375" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="report-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="generates" vertex="1">
+          <mxGeometry height="27" width="115" x="2355" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="admin-report-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="25" width="58" x="2390" y="829" as="geometry" />
+        </mxCell>
+        <mxCell id="report-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="26" width="60" x="2350" y="973" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-notification-request" edge="1" parent="1" source="LoanRequest" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.92;exitDx=0;exitDy=0;entryX=0.52;entryY=0;entryDx=0;entryDy=0;" target="Notification" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2077" y="1398" />
+              <mxPoint x="2460" y="1398" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notify-request-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="triggers" vertex="1">
+          <mxGeometry height="25" width="105" x="2177" y="1365" as="geometry" />
+        </mxCell>
+        <mxCell id="notify-request-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="23" width="57" x="2039" y="1333" as="geometry" />
+        </mxCell>
+        <mxCell id="notify-request-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="23" width="57" x="2450" y="1476" as="geometry" />
+        </mxCell>
+        <mxCell id="assoc-loan-notify" edge="1" parent="1" source="Loan" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.61;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Notification" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="1977" />
+              <mxPoint x="2440" y="1977" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="notify-loan-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="overdue alerts" vertex="1">
+          <mxGeometry height="26" width="165" x="1585" y="1944" as="geometry" />
+        </mxCell>
+        <mxCell id="notify-loan-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+          <mxGeometry height="25" width="57" x="1075" y="1895" as="geometry" />
+        </mxCell>
+        <mxCell id="notify-loan-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="25" width="58" x="2410" y="1895" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
