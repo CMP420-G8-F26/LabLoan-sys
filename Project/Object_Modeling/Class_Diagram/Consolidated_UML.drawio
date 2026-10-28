@@ -1,10 +1,10 @@
 <mxfile host="app.diagrams.net" agent="COE420 Lab 5 draft" compressed="false">
   <diagram id="lab5-consolidated-v1" name="Consolidated UML - Working Draft">
-    <mxGraphModel dx="2711" dy="1408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2820" pageHeight="2170" math="0" shadow="0">
+    <mxGraphModel dx="3674" dy="2469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2820" pageHeight="2170" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="background" parent="1" style="rounded=0;fillColor=#F8FAFD;strokeColor=#E2EAF1;" value="" vertex="1">
+        <mxCell id="background" parent="1" style="rounded=0;fillColor=#F8FAFD;strokeColor=light-dark(default, #748699);" value="" vertex="1">
           <mxGeometry height="2140" width="2790" x="12" y="12" as="geometry" />
         </mxCell>
         <mxCell id="lane-actors" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=18;fontColor=#48617b;fontStyle=1;align=left;verticalAlign=middle;spacing=3;" value="A  /  ACCOUNTS &amp; ROLES" vertex="1">
@@ -41,7 +41,7 @@
           <mxGeometry height="124" width="700" y="89" as="geometry" />
         </mxCell>
         <mxCell id="LabStaff" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7695B3;strokeWidth=1.5;" value="LabStaff" vertex="1">
-          <mxGeometry height="267" width="765" x="955" y="470" as="geometry" />
+          <mxGeometry height="304" width="765" x="955" y="470" as="geometry" />
         </mxCell>
         <mxCell id="LabStaff-attr" parent="LabStaff" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- staffID: String&lt;/div&gt;" vertex="1">
           <mxGeometry height="45" width="765" y="43" as="geometry" />
@@ -49,8 +49,8 @@
         <mxCell id="LabStaff-separator" parent="LabStaff" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
           <mxGeometry height="1" width="765" y="88" as="geometry" />
         </mxCell>
-        <mxCell id="LabStaff-op" parent="LabStaff" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ viewPendingRequests(): List&amp;lt;LoanRequest&amp;gt;&lt;br&gt;+ reviewRequest(request: LoanRequest): void&lt;br&gt;+ addEquipment(item: Equipment): void&lt;br&gt;+ updateEquipment(item: Equipment): void&lt;br&gt;+ deactivateEquipment(equipmentID: String): void&lt;br&gt;+ viewLoanRecords(): List&amp;lt;Loan&amp;gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="176" width="765" y="89" as="geometry" />
+        <mxCell id="LabStaff-op" parent="LabStaff" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ viewPendingRequests(): List&amp;lt;LoanRequest&amp;gt;&lt;br&gt;+ reviewRequest(request: LoanRequest): void&lt;br&gt;+ addEquipment(item: Equipment): void&lt;br&gt;+ updateEquipment(item: Equipment): void&lt;br&gt;+ deactivateEquipment(equipmentID: String): void&lt;br&gt;+ viewLoanRecords(): List&amp;lt;Loan&amp;gt;&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ recordCheckout(): void&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ processReturn(): void&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ viewOverdueLoans(): List&amp;lt;LoanRecord&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="215" width="765" y="89" as="geometry" />
         </mxCell>
         <mxCell id="Admin" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#244B70;swimlaneFillColor=#FFFFFF;strokeColor=#7695B3;strokeWidth=1.5;" value="Admin" vertex="1">
           <mxGeometry height="189" width="800" x="1920" y="470" as="geometry" />
@@ -115,7 +115,7 @@
         <mxCell id="Loan" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#66528E;swimlaneFillColor=#FFFFFF;strokeColor=#8873B0;strokeWidth=1.5;" value="Loan" vertex="1">
           <mxGeometry height="315" width="665" x="700" y="1515" as="geometry" />
         </mxCell>
-        <mxCell id="Loan-attr" parent="Loan" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- loanID: String&lt;br&gt;- checkoutDate: Date&lt;br&gt;- expectedReturnDate: Date&lt;br&gt;- actualReturnDate: Date&lt;br&gt;- status: LoanStatus&lt;/div&gt;" vertex="1">
+        <mxCell id="Loan-attr" parent="Loan" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#F6F9FC;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- loanID: String&lt;br&gt;- checkoutDate: Date&lt;br&gt;- expectedReturnDate: Date&lt;br&gt;- actualReturnDate: Date&lt;br&gt;- status: LoanStatus&lt;/div&gt;&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;- BorrowerID: String&lt;/div&gt;" vertex="1">
           <mxGeometry height="145" width="665" y="43" as="geometry" />
         </mxCell>
         <mxCell id="Loan-separator" parent="Loan" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
@@ -133,7 +133,7 @@
         <mxCell id="ReturnTransaction-separator" parent="ReturnTransaction" style="fillColor=#C1CCD6;strokeColor=none;" value="" vertex="1">
           <mxGeometry height="1" width="650" y="188" as="geometry" />
         </mxCell>
-        <mxCell id="ReturnTransaction-op" parent="ReturnTransaction" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ processReturn(loan: Loan): void&lt;br&gt;+ checkLateStatus(expectedDate: Date,&lt;br&gt;    actualDate: Date): boolean&lt;/div&gt;" vertex="1">
+        <mxCell id="ReturnTransaction-op" parent="ReturnTransaction" style="text;html=1;whiteSpace=wrap;overflow=hidden;strokeColor=none;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=14;spacingTop=8;" value="&lt;div style=&quot;font-family:Arial;font-size:15px;line-height:1.48&quot;&gt;+ processReturn(loan: Loan): void&lt;br&gt;+ checkLateStatus(expectedDate: Date, actualDate: Date): boolean&lt;/div&gt;" vertex="1">
           <mxGeometry height="98" width="650" y="189" as="geometry" />
         </mxCell>
         <mxCell id="Notification" parent="1" style="swimlane;html=1;startSize=43;horizontal=1;container=1;collapsible=0;rounded=0;fontFamily=Arial;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontColor=#FFFFFF;fillColor=#66528E;swimlaneFillColor=#FFFFFF;strokeColor=#8873B0;strokeWidth=1.5;" value="Notification" vertex="1">
@@ -190,11 +190,13 @@
         <mxCell id="s-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
           <mxGeometry height="26" width="59" x="1500" y="964" as="geometry" />
         </mxCell>
-        <mxCell id="assoc-reviews" edge="1" parent="1" source="LabStaff" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0.62;entryY=0;entryDx=0;entryDy=0;" target="LoanRequest" value="">
-          <mxGeometry relative="1" as="geometry">
+        <mxCell id="assoc-reviews" edge="1" parent="1" source="LabStaff-op" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.914;exitY=0.991;exitDx=0;exitDy=0;entryX=0.62;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="LoanRequest" value="">
+          <mxGeometry relative="1" x="0.1001" as="geometry">
             <Array as="points">
+              <mxPoint x="1654.2" y="861" />
               <mxPoint x="1800" y="861" />
               <mxPoint x="1800" y="955" />
+              <mxPoint x="1808" y="955" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -353,11 +355,68 @@
         <mxCell id="notify-loan-label" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=14;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="overdue alerts" vertex="1">
           <mxGeometry height="26" width="165" x="1585" y="1944" as="geometry" />
         </mxCell>
-        <mxCell id="notify-loan-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..1" vertex="1">
+        <mxCell id="notify-loan-one" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
           <mxGeometry height="25" width="57" x="1075" y="1895" as="geometry" />
         </mxCell>
         <mxCell id="notify-loan-many" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
           <mxGeometry height="25" width="58" x="2410" y="1895" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-3" edge="1" parent="1" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0.914;exitY=0.991;exitDx=0;exitDy=0;entryX=0.62;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" x="0.1001" as="geometry">
+            <Array as="points">
+              <mxPoint x="1480.2" y="863" />
+              <mxPoint x="1626" y="863" />
+              <mxPoint x="1626" y="957" />
+              <mxPoint x="1634" y="957" />
+            </Array>
+            <mxPoint x="1480" y="774" as="sourcePoint" />
+            <mxPoint x="1634" y="1002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="Issues" vertex="1">
+          <mxGeometry height="25" width="95" x="1500" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="26" width="55" x="1480" y="776" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="26" width="55" x="1640" y="968" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-10" edge="1" parent="1" source="x0gmB3EjCre21EgRJtkz-14" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;" target="ReturnTransaction" value="">
+          <mxGeometry relative="1" x="0.2183" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1400" y="772" as="sourcePoint" />
+            <mxPoint x="2030" y="1830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-12" edge="1" parent="1" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;exitX=0;exitY=0.64;exitDx=0;exitDy=0;" target="x0gmB3EjCre21EgRJtkz-11" value="">
+          <mxGeometry relative="1" x="0.2183" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="779" />
+              <mxPoint x="1365" y="779" />
+              <mxPoint x="1365" y="1370" />
+            </Array>
+            <mxPoint x="1400" y="772" as="sourcePoint" />
+            <mxPoint x="2030" y="1515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=1;align=center;verticalAlign=middle;spacing=3;" value="Processes" vertex="1">
+          <mxGeometry height="25" width="95" x="1678" y="1354" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="1" vertex="1">
+          <mxGeometry height="26" width="55" x="1365" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-15" edge="1" parent="1" source="x0gmB3EjCre21EgRJtkz-11" style="endArrow=none;startArrow=none;strokeColor=#667D91;strokeWidth=2;html=1;rounded=0;edgeStyle=segmentEdgeStyle;orthogonalLoop=1;" target="x0gmB3EjCre21EgRJtkz-14" value="">
+          <mxGeometry relative="1" x="0.2183" as="geometry">
+            <Array as="points">
+              <mxPoint x="2030" y="1370" />
+            </Array>
+            <mxPoint x="1773" y="1370" as="sourcePoint" />
+            <mxPoint x="2030" y="1515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0gmB3EjCre21EgRJtkz-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#F8FAFD;fontFamily=Arial;fontSize=15;fontColor=#334A60;fontStyle=0;align=center;verticalAlign=middle;spacing=3;" value="0..*" vertex="1">
+          <mxGeometry height="26" width="59" x="1996" y="1476" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
