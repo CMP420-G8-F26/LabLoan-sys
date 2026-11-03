@@ -89,13 +89,3 @@ Origin: Rachad.
 Integration status: RESOLVED. Merged into CC08 Loan to eliminate duplicate classes.
 
 
-## Outstanding class-inventory decisions
-
-1. Confirm that User, Student, LabStaff and Equipment are each represented once after integration. *(Resolved — merged into single classes)*
-2. Decide whether LoanRecord is the same domain entity as Loan; if yes, remove CC12 and merge its relevant attributes/operations into CC08. *(Resolved — merged into CC08 Loan)*
-3. Confirm whether ReturnTransaction remains a separate object recording a return, rather than just a method on Loan. *(Resolved — retained as a separate class to capture return condition and receiving staff)*
-4. Confirm Rachad's individual candidate classes and official related use cases when received. *(Resolved — integrated UC-13, UC-15, UC-16, UC-17, UC-18)*
-5. Confirm agreed final IDs, class definitions and contributors as a team before marking this inventory APPROVED.
-6. Ensure the final UML diagram and traceability check match the approved inventory.
-
-This file is a team-integration draft, not a claim that every model decision has already been approved.
