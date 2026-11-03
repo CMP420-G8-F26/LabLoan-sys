@@ -50,18 +50,3 @@ LoanRequest is NOT a duplicate of Loan: a request can be pending/rejected before
 - Loan (1) — triggers — Notification (0..*) for overdue alerts.
 
 All multiplicities are provisional until the merged diagram is reviewed.
-
-## Missing integration points to verify
-
-- UC-11 / UC-12: Approve / Reject Loan Request (staff action and request-status changes).
-- UC-19 / UC-20: History and Reports.
-- Lab 4: consistency with P1–P5 and the User, Equipment, and Loan data stores.
-
-## Next steps
-
-1. Agree on a single set of classes, class names, attribute types, and method ownership.
-2. Build ONE editable consolidated UML diagram under `Object_Modeling/Class_Diagram/`.
-3. Verify inheritance, association labels and multiplicities against actual requirements.
-4. Complete `Class_Model_Consistency_Check.md` using the final diagram and Labs 3–4.
-5. Mark decisions as confirmed only after actual team agreement; preserve individual contributions in `Individual_Models/`.
-6. Include an accurate declaration and justification of AI assistance in the final lab submission.
